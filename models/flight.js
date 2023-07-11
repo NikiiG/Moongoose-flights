@@ -14,7 +14,7 @@ airport: {
 flightNo: {
     type: Number,
     min: 10,
-    max: 9999
+    max:9999
 },
 departs: Date
 },{
