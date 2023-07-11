@@ -14,8 +14,7 @@ module.exports = {
 async function create(req, res) {
     try {
         await Flight.create(req.body);
-        // Always redirect after CUDing data
-        // We'll refactor to redirect to the movies index after we implement it
+       
         res.redirect('/flights');
       } catch (err) {
         // Typically some sort of validation error
