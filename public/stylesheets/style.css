@@ -1,8 +1,100 @@
 body {
+ 
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 15px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color:black;
 }
 
 a {
-  color: #00B7FF;
+  color: darkblue;
+}
+table {
+  display: inline;
+}
+.table { 
+  display: flex; 
+  align-content: center; 
+  justify-content: center;
+}
+.title { 
+  text-align:center; 
+  font-size: 18px; 
+  color: #455; 
+  font-weight: bold; 
+  background-color: #ffffff44;
+}
+.tb td { 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.253);
+}
+.airline {
+  width: 14%;
+}
+.airport {
+  width: 14%;
+}
+.flightNo {
+  width: 14%;
+}
+
+.departs {
+  width: 100%;
+}
+
+.tb {
+  border-radius: 10px;
+  border-spacing: 1px;
+}
+.button {
+  background: lightcoral;
+  color: #fff;
+  width:70px;
+}
+thead {
+	border-top: none;
+}
+
+
+#nav {
+
+  font-family: "Saira Semi Condensed", sans-serif;
+  height: 5em;
+  display: inline;
+  overflow: hidden;
+}
+label,
+select,
+#form1 {
+	margin: 10px 0 10px 0;
+}
+
+section {
+	margin: 12px;
+}
+
+#add-destination {
+	background-color: rgb(245, 245, 245);
+	width: 100%;
+	padding: 15px;
+}
+
+#show-destinations {
+	width: 100%;
+  background-color: rgb(245, 245, 245);
+}
+aside {
+	background-color: rgb(245, 245, 245);
+	height: 100%;
+	display: grid;
+	grid-template-rows: 100px auto;
+}
+
+#column-center {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }

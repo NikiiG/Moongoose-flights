@@ -1,0 +1,57 @@
+<%- include('../partials/header') %><br>
+<aside>
+<section id="show-page">
+    <div class="show-info">Airline: &nbsp; <%= flight.airline %></div>
+    <div class="show-info">Airport:  &nbsp;<%= flight.airport %></div>
+    <div class="show-info">Flight No: &nbsp;<%= flight.flightNo %></div>
+    <div class="show-info">Departs: &nbsp; <%= flight.departs %></div>
+    </section>
+    <aside>
+    <!-- new markup below -->
+    <div id="column-center">
+        <section id="add-destination">
+<form  method="POST"
+  action="/flights/<%= flight._id %>/destinations">
+  <h1>Add Destination</h1>
+  <div>Airport:
+    <select name="airport" id="select-destination">    
+         <option value="AUS">AUS</option>
+        <option value="DFW">DFW</option>
+         <option value="DEN">DEN</option>
+         <option value="LAX">LAX</option>
+         <option value="SAN">SAN</option>
+ </select>
+</label>
+  <label>Arrival:
+    <input type="datetime-local" name="arrival" value="2023-06-12T19:30" />
+  </label>
+  <input type="submit" value="Add Destination Details">
+</form>
+</section>
+<section id="show-destinations">
+<% if(flight.destinations.length) { %>
+    <table>
+      <thead>
+        <tr>
+          <th >Airport</th>
+          <th >Arrival</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% flight.destinations.sort((a,b) => a.arrival - b.arrival ).forEach(d => { %>
+          <tr>
+            <!-- .toLocaleDateString() provides a more friendly date format -->
+       
+            <td><%= d.airport %></td>
+            <td><%= d.arrival  %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  <% }else{ %>
+    <h5>No Destinations</h5>
+    <% } %>
+</section>
+</div>
+  <%- include('../partials/footer') %>
+  
