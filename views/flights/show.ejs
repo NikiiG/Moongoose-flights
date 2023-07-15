@@ -6,7 +6,7 @@
     <div class="show-info">Flight No: &nbsp;<%= flight.flightNo %></div>
     <div class="show-info">Departs: &nbsp; <%= flight.departs %></div>
     </section>
-    <aside>
+</aside>
     <!-- new markup below -->
     <div id="column-center">
         <section id="add-destination">
@@ -33,8 +33,8 @@
     <table>
       <thead>
         <tr>
-          <th >Airport</th>
-          <th >Arrival</th>
+          <th >Airport &nbsp;</th>
+          <th >Arrival &nbsp;</th>
         </tr>
       </thead>
       <tbody>
@@ -52,6 +52,32 @@
     <h5>No Destinations</h5>
     <% } %>
 </section>
-</div>
+
+    <section id="show-tickets">
+<h2>Tickets</h2>
+<table>
+        <thead>
+            <tr>
+            <th>
+                Seat &nbsp;
+            </th>
+            <th>
+               Price &nbsp;
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+        <% tickets.forEach(function(t) { %>
+            <tr>
+                <td><%= t.seat %></td>
+                <td><%= t.price %></td>
+                
+            </tr>
+        <% }) %>
+    </tbody>
+</table><br>
+
+<a href="/flights/<%= flight._id %>/tickets/new" >Create a new ticket</a> 
+</section>
+
   <%- include('../partials/footer') %>
-  

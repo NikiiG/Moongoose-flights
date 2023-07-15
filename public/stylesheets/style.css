@@ -1,12 +1,11 @@
 body {
- 
   padding: 50px;
-  font: 15px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
   line-height: 1.5em;
   padding: 0;
   margin: 0;
   text-align: center;
-  color:black;
+  color: black;
 }
 
 a {
@@ -15,19 +14,19 @@ a {
 table {
   display: inline;
 }
-.table { 
-  display: flex; 
-  align-content: center; 
+.table {
+  display: flex;
+  align-content: center;
   justify-content: center;
 }
-.title { 
-  text-align:center; 
-  font-size: 18px; 
-  color: #455; 
-  font-weight: bold; 
+.title {
+  text-align: center;
+  font-size: 18px;
+  color: #455;
+  font-weight: bold;
   background-color: #ffffff44;
 }
-.tb td { 
+.tb td {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.253);
 }
@@ -52,15 +51,13 @@ table {
 .button {
   background: lightcoral;
   color: #fff;
-  width:70px;
+  width: 70px;
 }
 thead {
-	border-top: none;
+  border-top: none;
 }
 
-
 #nav {
-
   font-family: "Saira Semi Condensed", sans-serif;
   height: 5em;
   display: inline;
@@ -69,32 +66,36 @@ thead {
 label,
 select,
 #form1 {
-	margin: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 section {
-	margin: 12px;
+  margin: 12px;
 }
 
 #add-destination {
-	background-color: rgb(245, 245, 245);
-	width: 100%;
-	padding: 15px;
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  padding: 15px;
 }
 
 #show-destinations {
-	width: 100%;
+  width: 100%;
   background-color: rgb(245, 245, 245);
 }
 aside {
-	background-color: rgb(245, 245, 245);
-	height: 100%;
-	display: grid;
-	grid-template-rows: 100px auto;
+  background-color: rgb(245, 245, 245);
+  height: 100%;
+  display: grid;
+  grid-template-rows: 100px auto;
 }
 
 #column-center {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#show-tickets {
+  width: 100%;
+  background-color: rgb(245, 245, 245);
 }
